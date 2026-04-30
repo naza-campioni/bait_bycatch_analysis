@@ -1,3 +1,6 @@
+import pandas as pd
+from scipy.stats import mannwhitneyu
+
 def calc_manwu(df: pd.DataFrame, feats: list, target: str):
   '''
   Calculates Mannwhitneyu test on dataframe where target is assumed
