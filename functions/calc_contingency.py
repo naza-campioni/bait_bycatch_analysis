@@ -1,3 +1,6 @@
+import pandas as pd
+from scipy.stats import chi2_contingency
+
 def calc_contingency(df: pd.DataFrame, feats: list, target: str):
   '''
   Calcualtes chi2 contingency test on dataframe.
