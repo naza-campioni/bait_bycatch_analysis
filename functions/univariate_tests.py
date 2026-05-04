@@ -1,5 +1,6 @@
 from scipy.stats import mannwhitneyu, chi2_contingency, fisher_exact
 import pandas as pd
+import numpy as np
 
 def rank_biserial(U, n1, n2):
     return 1 - (2 * U) / (n1 * n2)
